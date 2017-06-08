@@ -1,0 +1,125 @@
+body{
+	font-family: "Roboto", sans-serif;
+}
+	form {
+		margin:	0 auto;
+		background-color: ;
+		border: 1px solid black;
+	}
+	.form-elem {
+		width: 100%;
+		margin: 0 auto 10px auto;
+		border-bottom: 1px solid #eee;
+		padding: 5px;
+		text-align: center;		
+	}
+	select, input{
+		margin: 0 auto;
+	}
+	.field-title {
+		font-weight: bold;
+		font-size: 16px;
+		text-align: center;
+		color: #333;
+		padding-right: 15px;
+	}
+	.tableAnsw div {
+		border-bottom: 1px solid #42dff4;
+	}
+	.tableAnsw div p:nth-child(2n){
+		color: #3fba32
+	}
+	.subtitle {
+		font-size: 14px;
+	}
+	input{
+		border-radius: 5px;
+		padding: 5px;
+		margin-bottom: 10px;
+	}
+
+	#wrap{
+		display: none;
+		opacity: 0.8;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 16px;
+		background-color: rgba(1, 1, 1, 0.725);
+		z-index: 100;
+		overflow: auto;
+	}
+	
+	#backWindow{
+		width: 500px;
+		height: 100%;
+		margin: 50px auto;
+		display: none;
+		background: #fff;
+		z-index: 200;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		padding: 16px;
+	}
+	
+	.close{
+		margin-left: 464px;
+		margin-top: 4px;
+		cursor: pointer;
+	}
+	#notFound {
+		display: none;
+	}
+	#tableAnsw {
+		display: none;
+	}
+
+	button{
+		border-radius: 5px;
+		background: #ffcc00;
+		border: none;
+		padding: 10px;
+	}
+
+	.warn{
+		color: #ffcc00;
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	.resultOfSearch{
+		color: #970606;
+		font-weight: bold;
+	}
+
+	.seat {
+  /*height: 10px;
+  width: 10px;*/
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #999999;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bought {
+		background-color: red;
+		cursor: not-allowed;
+	}
+.booked {
+	background-color: green;}
+	
+.mt40{
+		margin-top: 40px;
+	}
+	
+#map{
+	width: 1000px;
+	text-align: center;
+}

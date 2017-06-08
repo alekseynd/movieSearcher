@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" href="./css/style.css">
+	<meta charset="UTF-8">
+	<title>Карта зала</title>
+</head>
+
+<body>
+<div class="container">
+<div class="row">
+<div class="col-md-8 col-md-offset-1">
+<div class="mt40">	
+	<p><a href="http://localhost/services/">Назад к списку сеансов</a></p>
+	<span>Название фильма:</span> 			<span id="movieName"></span>
+</div>
+<div>
+	<span>Кинотеатр: </span> 				<span id="cinemaName"></span>
+</div>
+<div>
+	<span>Время начала сеанса</span>		<span id="datetime"></span>
+</div>
+<div>
+	<span>Зал: </span>						<span id="hallName"></span>
+</div>
+<p class="warn">!Карта кинозалов только в таком виде досталась!</p>
+<br>
+
+<button id="buyBookedTickets">Купить билеты</button>
+
+<h2>СХЕМА ЗАЛА</h2>
+	
+	<div id="map"></div>
+
+	</div>
+	</div>
+	</div>
+	<script src = './js/cinemaMap.js'></script>
+	<script src = './js/buyTickets.js'></script>
+</body>
+</html>

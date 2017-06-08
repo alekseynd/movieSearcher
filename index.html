@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tickets</title>
+ <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+
+	<div onclick="show('none')" id="wrap"></div>
+
+					<!-- Само окно-->
+			<div id="backWindow">
+						
+						 <!-- Картинка крестика-->
+						 <div class="close" onclick="show('none')">✖</div>
+						
+				<div id="notFound">
+					<p>По вашему запросу ничего не найдено</p>
+				</div>
+				<div class="tableAnsw" id="tableAnsw">
+					<div>
+						<p class="subtitle">Название фильма</p>
+						<p class="respInfo"><a href=""></a></p>
+					</div>
+					<div>
+						<p class="subtitle">Режиссер</p>
+						<p class="respInfo"></p>
+					</div>
+					<div>
+						<p class="subtitle">Возрастной ценз</p>
+						<p class="respInfo"></p>
+					</div>
+					<div>
+						<p class="subtitle">Актеры</p>
+						<p class="respInfo"></p>
+					</div>
+					<div>
+						<p class="subtitle">Описание</p>
+						<p class="respInfo"></p>
+					</div>
+				</div>
+
+				
+			</div>
+
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+	<form >
+		
+		<div class="form-elem" style="text-align: center;">
+			<p class="field-title">Название фильма</p>
+			<input type="text" id="movie-name" >
+		</div>
+	
+		<div class="form-elem">
+			<button id="search-movie">Поиск фильма</button>  
+		</div>
+
+	</form>
+</div>
+<div class="col-md-8">
+
+	<form action="bookTicket.php" enctype="multipart/form-data">
+		<div class="form-elem">
+			<span class="field-title">День просмотра фильма (01.02 и 02.02.2017 только )</span>
+			<input name="date" id="seanceDate" type="date"> 
+			<hr>
+			<span class="field-title">Время начала сеанса с </span>
+			<input type="text" name="time-from" placeholder="11:10:45"><br>
+			<span class="field-title">Время начала сеанса до</span>
+			<input type="text" name="time-to" placeholder="21:10:45">
+		</div>
+
+		<div class="form-elem">
+			<span class="field-title">Название фильма</span>
+			<input name="film-name" type="text">
+		</div>
+	
+		<div class="form-elem">
+			<span class="field-genre field-title">Жанр</span>
+			<select name="field-genre">  
+				<option value="0">Не выбран</option>
+				<option value="1">Фэнтези</option>
+				<option value="2">Приключения</option>
+				<option value="3">Военный</option>
+				<option value="4">Драма</option>
+				<option value="5">Комедия</option>
+			</select>
+		</div>
+
+		<div class="form-elem">
+			<span class="field-title">Цена от</span>
+			<input type="number" name="price-from" placeholder="₽" min="0" max="999"> 
+			<span class="field-title">Цена до</span>
+			<input type="number" name="price-to" placeholder="₽" min="0" max="1000"> 
+		</div>
+
+		<div class="form-elem">
+			<button id="find-seance">Поиск сеанса</button>  
+		</div>
+
+	</form>
+	</div>
+	</div>
+
+	<div id="res"></div>
+			</div>
+	<script src="./js/seanceSearch.js"></script>
+	<script src="./js/movieSearch.js"></script>
+</body>
+</html>
